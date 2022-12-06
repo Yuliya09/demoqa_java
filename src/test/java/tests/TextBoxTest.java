@@ -20,13 +20,13 @@ public class TextBoxTest {
         open("/text-box");
         $(".main-header").shouldHave(text("Text Box"));
 
-        $("#userName").setValue("Alex");
-        $("#userEmail").setValue("alex@company.com");
+        $("#userName").setValue("Alexey");
+        $("#userEmail").setValue("alexey@company.com");
         $("#currentAddress").setValue("Some address 1");
         $("#permanentAddress").setValue("Other address 2");
         $("#submit").click();
 
-        $("#output").shouldHave(text("Alex"), text("alex@company.com"),
+        $("#output").shouldHave(text("Alex"), text("alexey@company.com"),
                 text("Some address 1"), text("Other address 2"));
 
         $("#name").shouldHave(text("Alex"));
