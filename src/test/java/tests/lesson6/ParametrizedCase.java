@@ -25,7 +25,6 @@ public class ParametrizedCase {
     @BeforeEach
     void precondition() {
         open("https://www.wildberries.ru");
-        //zoom(0.8);
     }
 
     @AfterEach
