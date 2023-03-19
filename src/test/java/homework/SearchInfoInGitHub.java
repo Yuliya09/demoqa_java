@@ -16,7 +16,6 @@ public class SearchInfoInGitHub {
         Configuration.baseUrl = "https://github.com";
     }
         @Test
-
     void searchSelenideWikiSoftAssertions(){
         //open github
         open("/selenide/selenide");
@@ -30,7 +29,8 @@ public class SearchInfoInGitHub {
         //find unit5 code
         $ ("#user-content-3-using-junit5-extend-test-class")
                 .scrollIntoView(true)
-                .parent().shouldHave(text("Using JUnit5 extend test class:"));
+                .parent()
+                .shouldHave(text("Using JUnit5 extend test class:"));
 
     }
 }
