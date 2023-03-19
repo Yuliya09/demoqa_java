@@ -52,6 +52,7 @@ public class ParametrizedCase {
                 .shouldBe(visible)
                 .click();
         }
+
         //провалиться в корзину, проверить, что товар добавлен
 
     @Disabled
@@ -67,8 +68,8 @@ public class ParametrizedCase {
                     .shouldHave(text(testData))
                     .shouldBe(visible);
     }
-   /* @Test
+    @Test
     @Disabled ("bug: https://trello.com/c/M5oDdHDP/6-bug-for-test-intellijidea")
     public void basket(){
-    }*/
+    }
 }
